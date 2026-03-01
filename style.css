@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e1; /* beige clair */
+    color: #4b3b2a; /* marron foncé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container, .login-container {
+    background-color: #fff8f0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #d1bfa7;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #a67c52; /* marron */
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #b48b60;
+}
+
+/* Liste */
+li {
+    list-style-type: none;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: #f0e6dc;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0; /* pour animation fade-in */
+    transition: opacity 0.5s ease;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.edit-btn, button.delete-btn {
+    margin-left: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button.edit-btn:hover, button.delete-btn:hover {
+    transform: scale(1.1);
+}
